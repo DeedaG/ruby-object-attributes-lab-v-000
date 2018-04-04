@@ -9,8 +9,6 @@ def name (name)
   @name
 end
 
-fido = Dog.new
-fido.name = "Fido"
 
 
 
@@ -23,3 +21,17 @@ def breed=
 end
 
 end
+
+fido = Dog.new
+fido.name = "Fido"
+
+fido = Dog.new
+fido.instance_variable_set(:@name, "Fido")
+
+snoopy = Dog.new
+snoopy.breed = "Beagle"
+
+snoopy = Dog.new
+snoopy.instance_variable_set("@breed, Beagle")
+
+
