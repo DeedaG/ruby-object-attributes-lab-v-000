@@ -29,4 +29,4 @@ snoopy = Dog.new
 snoopy.breed = "Beagle"
 
 snoopy = Dog.new
-snoopy.instance_variable_set("@breed, Beagle")
+snoopy.instance_variable_set(:@breed, "Beagle")
