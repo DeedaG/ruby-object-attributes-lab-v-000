@@ -9,14 +9,11 @@ def name (name)
   @name
 end
 
-
-
-
-def breed
-  @breed
+def breed=(dogs_breed)
+  @breed = dogs_breed
 end
 
-def breed=
+def breed
   @breed
 end
 
@@ -33,5 +30,3 @@ snoopy.breed = "Beagle"
 
 snoopy = Dog.new
 snoopy.instance_variable_set("@breed, Beagle")
-
-
